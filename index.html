@@ -32,36 +32,92 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="container">
-        <nav class="navbar navbar-dark py-4">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">Diner</a>
-
-            <!-- Search button -->
-
-
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar container">
+      <a class="navbar-brand" href="#">Diner</a>
+      <div class="header__right">
+        <div class="navbar__search">
+          <form class="form-inline my-2 my-lg-0 input-group">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search here ..."
+              aria-label="Search"
+            />
+            <span
+              ><button class="btn my-2 my-sm-0" type="submit">
+                <i class="fas fa-search btn__search"></i></button
+            ></span>
+          </form>
+        </div>
+        <div class="navbar__icon">
+          <!-- <a href=""><i class="far fa-sun"></i></a> -->
+          <a href="#"> <i class="far fa-moon"></i></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <nav class="navbar" id="home">
+      <div class="container">
+        <div class="navbar__content">
+          <h1>
+            The Only Thing We <br />
+            Love More Than Food <br />
+            Is You!
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.Ea <br />
+            ipsum sed consequuntur illum facere.
+          </p>
+          <button>Read More <i class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <div class="navbar__menu">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li>
+          <a href="" class="btn__close"><i class="fas fa-times"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#404">404</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#page">Landing Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#code">Shot codes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#email">Email</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
     <!-- Carousel -->
     <section id="carousel">
