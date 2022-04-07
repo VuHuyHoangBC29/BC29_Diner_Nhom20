@@ -7,23 +7,123 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* HEADER */
+/* HEADER CSS  */
 header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 9;
+    background-size: cover;
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(./../image/banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-top: 20px;
 }
-
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 35px;
     font-weight: 900;
+    color: #fff;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.header__right {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.form-control {
+    padding: 20px 50px 20px 20px;
+}
+.fa-search {
+    position: absolute;
+    right: 45px;
+    bottom: 10px;
+    font-size: 20px;
+    color: #5b606c;
+    transition: all 0.5s;
+    z-index: 999;
+}
+.fa-search:hover, .fa-bars:hover, .fa-moon:hover {
+    color: #ff6600; 
+}
+.navbar__icon a, .fa-bars {
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.fa-moon {
+    transition: all 0.5s;
+}
+.collapse .navbar__menu {
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    background: rgb(6 3 0 / 77%);
+    height: 100vh;
+    width: 100%;
+}
+.navbar-toggler {
+    margin-left: 20px;
+}
+.btn__close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btn__close i {
+    font-size: 20px;
+    color: #fbfbfb;
+    background-color: #ff6600;
+    padding: 10px 15px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.navbar-nav {
+    padding-top: 100px;
+}
+.navbar-nav a {
+    font-weight: 900;
+    padding: 10px 0;
+    transition: all 0.5s;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
 }
 
-.navbar-toggler {
-    border: none;
+.navbar-nav a:hover {
+    color: #ff6600;
 }
+.navbar__content {
+    margin-top: 100px;
+}
+.navbar__content h1 {
+    font-weight: 700;
+    font-size: 55px;
+    color: #fff;
+}
+.navbar__content p {
+    color: #faf0d8;
+    margin: 20px 0 40px 0;
+    line-height: 26px;
+}
+.navbar__content button {
+    padding: 20px 50px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.navbar__content button:hover {
+    background-color: white;
+    color: #ff6600;
+}
+/* END HEADER CSS */
 
 /* CAROUSEL */
 #carousel {
@@ -616,6 +716,7 @@ footer {
 .contact__item ul li h4 a {
     font-size: 35px;
 }
+
 .contact__icon i {
     font-size: 15px;
     height: 30px;
@@ -689,7 +790,6 @@ footer {
 }
 footer a:hover {
     text-decoration: none;
-    background-color: #fff;
     color: #ff6600;
 }
 .cd-top--is-visible { 
