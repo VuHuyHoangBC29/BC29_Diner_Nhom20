@@ -566,7 +566,7 @@ header {
     0% {
         box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
     }
-    0% {
+    50% {
         box-shadow: 0 0 0 5 rgb(255 255 255 / 25%), 0 0 0 15px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
     }
     100% {
@@ -650,8 +650,11 @@ header {
     text-align: center;
 }
 .testimonials__text p:nth-of-type(1) {
-    font-size: 50px;
+    font-size: 80px;
     color: #ff6600;
+    font-family: initial;
+    font-style: italic;
+    margin: 0;
 }
 .testimonials__text span:nth-of-type(1) {
     font-size: 30px;
@@ -716,7 +719,6 @@ footer {
 .contact__item ul li h4 a {
     font-size: 35px;
 }
-
 .contact__icon i {
     font-size: 15px;
     height: 30px;
@@ -765,7 +767,6 @@ footer {
     margin: 0 10px;
     text-decoration: none;
     color:  #a5a2a1;
-    font-size: 20px;
 }
 .contact__copies-item a:hover {
     color: #ff6600;
@@ -787,6 +788,7 @@ footer {
     font-size: 20px;
     color: white;
     text-decoration: none;
+    transition: all 0.5s;
 }
 footer a:hover {
     text-decoration: none;
@@ -809,14 +811,25 @@ footer a:hover {
         left: 15px;
         top: 130px;
     }
+    .jumping__list {
+        margin-top: 90px;
+    }
+    .video__content {
+        height: 550px;
+    }
 }
 @media screen and (max-width:992px) {
-    .blog__title h6, .testimonials__title h6 {
-        font-size: 22px;
+    .form-inline {
+        width: 250px;
     }
-    .jumping__title h2, .blog__title h2, .testimonials__title h2 {
-        font-size: 32px;
-        line-height: 44px;
+    .restaurant__img {
+        height: 500px;
+    } 
+    .categories__text {
+        padding: 8px 28px;
+    }
+    .categories__text a {
+        font-size: 20px;
     }
     .jumping__content {
         height: 400px;
@@ -827,21 +840,15 @@ footer a:hover {
         margin: 25px 15px;
         font-size: 17px;
     }
-    .jumping__item i {
-        font-size: 20px;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-    }
-    .jumping__item p {
-        font-size: 2em;
-        margin: 13px 0 3px 0;
-    }
-    .jumping__item span {
-        font-size: 15px;
+    .jumping__list {
+        margin-top: 70px;
     }
     .video__content {
-        height: 450px;
+        height: 500px;
+    }
+    .testimonials__wrapper {
+        width: 70%;
+        margin: 50px auto;
     }
     .blog__time {
         position: absolute;
@@ -850,38 +857,28 @@ footer a:hover {
     }
 }
 @media screen and (max-width:768px) {
-    .blog__title h6, .testimonials__title h6 {
-        font-size: 18px;
+    .form-inline {
+        width: 200px;
     }
-    .jumping__title h2, .blog__title h2, .testimonials__title h2 {
-        font-size: 28px;
-        line-height: 36px;
+    .restaurant__img {
+        height: 400px;
+    } 
+    .categories__text {
+        padding: 5px 25px;
     }
-    .jumping__content {
-        height: 350px;
+    .categories__text a {
+        font-size: 17px;
     }
-    .jumping__title button {
-        padding: 8px 30px;
-        border-radius: 6px;
-        margin: 20px 10px;
-        font-size: 15px;
+    .jumping__list {
+        margin-top: 70px;
     }
-    .jumping__item i {
-        font-size: 18px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-    }
-    .jumping__item p {
-        font-size: 1.5em;
-        margin: 10px 0 0 0;
-    }
-    .jumping__item span {
-     font-size: 13px;
+    .testimonials__wrapper {
+        width: 80%;
+        margin: 50px auto;
     }
     .video__content {
-        height: 400px;
-        margin-top: 400px ;
+        height: 350px;
+        margin-top: 550px ;
     }
     .blog__time {
         position: absolute;
@@ -890,37 +887,27 @@ footer a:hover {
     }
 }
 @media screen and (max-width:576px) {
-    .blog__title h6, .testimonials__title h6  {
-        font-size: 15px;
+    .form-inline {
+        display: none;
     }
-    .jumping__title h2, .blog__title h2, .testimonials__title h2 {
-        font-size: 25px;
-        line-height: 30px;
-    }
-    .jumping__content {
+    .restaurant__img {
         height: 300px;
+    } 
+    .categories__text {
+        padding: 0px 20px;
     }
-    .jumping__title button {
-        padding: 5px 20px;
-        border-radius: 4px;
-        margin: 15px 5px;
-        font-size: 13px;
+    .categories__text a {
+        font-size: 14px;
     }
-    .jumping__item i {
-        font-size: 15px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+    .jumping__list {
+        margin-top: 70px;
     }
-    .jumping__item p {
-        font-size: 1em;
-        margin: 5px 0 0 0;
-    }
-    .jumping__item span {
-        font-size: 11px;
+    .testimonials__wrapper {
+        width: 90%;
+        margin: 50px auto;
     }
     .video__content {
-        margin-top: 350px;
+        margin-top: 600px;
         height: 300px;
     }
     .blog__time {
