@@ -14,10 +14,9 @@
     rel="stylesheet">
 
   <!-- Fontawesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- SLICKS-->
   <link rel="stylesheet" href="./slicks/slick.css" />
@@ -31,7 +30,10 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body >
+  <main id="home">
+
+
   <header>
     <nav class="navbar container">
       <a class="navbar-brand" href="#">Diner</a>
@@ -45,7 +47,7 @@
         </div>
         <div class="navbar__icon">
           <!-- <a href=""><i class="far fa-sun"></i></a> -->
-          <a href="#"> <i class="far fa-moon"></i></a>
+          <a href="#" id="mode__switch"> <i class="far fa-moon"></i></a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
           aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -744,7 +746,7 @@
     </div>
   </div>
 
-
+</main>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -781,6 +783,9 @@
       });
     });
   </script>
+
+  <!-- Main js -->
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
