@@ -14,6 +14,11 @@
     rel="stylesheet">
 
   <!-- Fontawesome -->
+<<<<<<< HEAD
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+=======
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -21,6 +26,7 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 />
+>>>>>>> main
 
   <!-- SLICKS-->
   <link rel="stylesheet" href="./slicks/slick.css" />
@@ -34,7 +40,10 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body >
+  <main id="home">
+
+
   <header>
     <nav class="navbar container">
       <a class="navbar-brand" href="#">Diner</a>
@@ -48,7 +57,7 @@
         </div>
         <div class="navbar__icon">
           <!-- <a href=""><i class="far fa-sun"></i></a> -->
-          <a href="#"> <i class="far fa-moon"></i></a>
+          <a href="#" id="mode__switch"> <i class="far fa-moon"></i></a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
           aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,8 +69,8 @@
       <div class="container">
         <div class="navbar__content">
           <h1>
-            The Only Thing We <br />
-            Love More Than Food <br />
+            The Only Thing We
+            Love More Than Food
             Is You!
           </h1>
           <p>
@@ -166,14 +175,14 @@
   <!-- BOOKING -->
   <section id="booking">
     <div class="booking__content">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-lg-6 px-0">
+      <div class="row mx-0">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 px-0">
           <div class="booking__left">
-            <img class="img-fluid" src="/images/banner3.jpg" alt="">
+            <!-- <img class="img-fluid" src="/images/banner3.jpg" alt=""> -->
           </div>
         </div>
 
-        <div class="col-12 col-sm-12 col-lg-6 px-0">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 px-0">
           <div class="booking__right">
             <p class="right__title">
               More than 3000 Restaurants
@@ -472,12 +481,10 @@
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content">
-
-            <div class="modal-body">
-              <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="100%" height="360"
+            <div class="modal-body text-center">
+              <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640px" height="360px"
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
-
           </div>
         </div>
 
@@ -716,7 +723,7 @@
     </div>
   </footer>
 
-  <div id="fixed__navbar">
+  <!-- <div id="fixed__navbar">
     <div class="fixed__navbar__list">
       <div class="fixed__navbar__item item1">
         <a href="#">
@@ -745,9 +752,9 @@
         </a>
       </div>
     </div>
-  </div>
+  </div> -->
 
-
+</main>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -784,6 +791,9 @@
       });
     });
   </script>
+
+  <!-- Main js -->
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
