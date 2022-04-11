@@ -580,6 +580,17 @@ header {
     padding: 100px 0;
     background-color: #f7f7f7;
 }
+
+.blog__title h6 {
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+}
+
+.blog__title h1 {
+    font-weight: 600;
+}
+
 .blog__title {
     text-align: center;
     margin-bottom: 30px;
@@ -642,6 +653,17 @@ header {
 .testimonials__title {
     text-align: center;
 }
+
+.testimonials__title h6 {
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+}
+
+.testimonials__title h1 {
+    font-weight: 600;
+}
+
 .testimonials__wrapper {
     width: 60%;
     margin: 50px auto;
