@@ -15,12 +15,15 @@
     background-position: initial;
     background-attachment: fixed;
     height: 100vh;
+<<<<<<< HEAD
     padding-top: 20px;
 } */
 
 header {
     background: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(./../images/banner1.jpg) top / cover fixed;
     height: 100vh;
+=======
+>>>>>>> main
     padding-top: 20px;
 }
 
