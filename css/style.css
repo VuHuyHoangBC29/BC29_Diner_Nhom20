@@ -174,7 +174,6 @@ header {
     color: #ff6600;
     font-size: 1.3rem;
 }
-
 .about__left h1 {
     font-size: 2.2rem;
     font-weight: 700;
@@ -439,8 +438,10 @@ header {
 }
 .jumping__title h2 {
     color: white;
-    font-size: 50px;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
+
 .jumping__title button {
     padding: 15px 50px;
     border-radius: 10px;
@@ -584,6 +585,15 @@ header {
     text-align: center;
     margin-bottom: 30px;
 }
+.blog__title h5 {
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+    font-size: 1.3rem;
+}
+.blog__title h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
 .blog__text>h5>a {
     font-weight: 600;
     text-decoration: none;
@@ -641,6 +651,15 @@ header {
 }
 .testimonials__title {
     text-align: center;
+}
+.testimonials__title h5 {
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+    font-size: 1.3rem;
+}
+.testimonials__title h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 .testimonials__wrapper {
     width: 60%;
