@@ -437,13 +437,27 @@
     <!-- VIDEO  -->
     <section class="video">
       <div class="container">
-        <div class="video__content"></div>
-        <div class="video__icon">
-          <a href="https://player.vimeo.com/video/305185528" target="_blank"
-            ><i class="fas fa-play"></i
-          ></a>
+        <div class="video__content">
         </div>
-      </div>
+  
+        <!-- Button trigger modal -->
+        <div class="video__icon" data-toggle="modal" data-target="#exampleModalCenter">
+          <i class="fas fa-play"></i>
+        </div>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640px" height="360px"
+                  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+  
+        </div>
     </section>
 
     <!-- BLOG  -->
