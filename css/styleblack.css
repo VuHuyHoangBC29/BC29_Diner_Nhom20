@@ -672,12 +672,16 @@ footer {
 }
 .contact .form-control {
     padding: 30px 50px 30px 20px;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .submit-btn {
     padding: 20px 0;
     background-color: #ff6600;
     border: none;
     transition: all 0.5s;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .submit-btn:hover {
     opacity: 0.8;
