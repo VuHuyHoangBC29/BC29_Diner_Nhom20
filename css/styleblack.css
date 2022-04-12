@@ -470,7 +470,7 @@ header {
     left: 50%;
     transform: translate(-50%,-50%);
     transition: all 0.5s ease-in-out;
-    animation: videoicon 1.5s linear infinite;
+    animation: videoicon 1s linear infinite;
     border: transparent;
 }
 .video__icon i:hover {
@@ -485,11 +485,8 @@ header {
     0% {
         box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
     }
-    50% {
-        box-shadow: 0 0 0 5 rgb(255 255 255 / 25%), 0 0 0 15px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
-    }
     100% {
-        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
     }
 }
 /* END VIDEO CSS  */
