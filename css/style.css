@@ -25,8 +25,8 @@ header {
 }
 
 .navbar-brand {
-    font-size: 35px;
-    font-weight: 900;
+    font-size: 45px !important;
+    font-weight: 900 !important;
     color: #fff;
 }
 .navbar-brand:hover {
@@ -120,8 +120,8 @@ header {
 }
 
 .navbar__content h1 {
-    font-weight: 700;
-    font-size: 55px;
+    font-weight: 600;
+    font-size: 45px;
     color: #fff;
 }
 
@@ -939,6 +939,10 @@ footer .backtotop:hover {
     }
 }
 @media screen and (max-width:992px) {
+    .navbar__content h1 {
+        font-size: 50px;
+        margin-top: 70px;
+    }
     .form-inline {
         width: 250px;
     }
@@ -977,6 +981,9 @@ footer .backtotop:hover {
     }
 }
 @media screen and (max-width:768px) {
+    .navbar__content h1 {
+        margin-top: 70px;
+    }
     .form-inline {
         width: 200px;
     }
@@ -1007,6 +1014,10 @@ footer .backtotop:hover {
     }
 }
 @media screen and (max-width:576px) {
+    .navbar__content h1 {
+        font-size: 40px;
+        margin-top: 70px;
+    }
     .form-inline {
         display: none;
     }
