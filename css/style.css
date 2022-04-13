@@ -8,7 +8,7 @@
 }
 
 /* HEADER CSS  */
-header {
+/* header {
     background-size: cover;
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(./../image/banner1.jpg);
     background-repeat: no-repeat;
@@ -16,7 +16,14 @@ header {
     background-attachment: fixed;
     height: 100vh;
     padding-top: 20px;
+} */
+
+header {
+    background: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(./../images/banner1.jpg) top / cover fixed;
+    height: 100vh;
+    padding-top: 20px;
 }
+
 .navbar-brand {
     font-size: 35px;
     font-weight: 900;
@@ -46,17 +53,21 @@ header {
     transition: all 0.5s;
     z-index: 999;
 }
+
 .fa-search:hover, .fa-bars:hover, .fa-moon:hover {
     color: #ff6600; 
 }
+
 .navbar__icon a, .fa-bars {
     color: #fff;
     font-size: 20px;
     transition: all 0.5s;
 }
+
 .fa-moon {
     transition: all 0.5s;
 }
+
 .collapse .navbar__menu {
     position: absolute;
     top: 0%;
@@ -65,15 +76,18 @@ header {
     height: 100vh;
     width: 100%;
 }
+
 .navbar-toggler {
     margin-left: 20px;
 }
+
 .btn__close {
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
 }
+
 .btn__close i {
     font-size: 20px;
     color: #fbfbfb;
@@ -82,9 +96,11 @@ header {
     margin: 30px;
     border-radius: 10px;
 }
+
 .navbar-nav {
     padding-top: 100px;
 }
+
 .navbar-nav a {
     font-weight: 900;
     padding: 10px 0;
@@ -97,19 +113,24 @@ header {
 .navbar-nav a:hover {
     color: #ff6600;
 }
+
 .navbar__content {
     margin-top: 100px;
+    margin-right: 30rem;
 }
+
 .navbar__content h1 {
     font-weight: 700;
     font-size: 55px;
     color: #fff;
 }
+
 .navbar__content p {
     color: #faf0d8;
     margin: 20px 0 40px 0;
     line-height: 26px;
 }
+
 .navbar__content button {
     padding: 20px 50px;
     background-color: transparent;
@@ -123,10 +144,24 @@ header {
     background-color: white;
     color: #ff6600;
 }
+
+@media screen and (max-width:991px) {
+    .navbar__content {
+        margin-top: 2rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar__content {
+        margin-top: 1rem;
+        margin-right: 2rem;
+    }
+}
 /* END HEADER CSS */
 
 /* CAROUSEL */
-#carousel {
+/* #carousel {
     background: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(./../images/banner1.jpg) top / cover no-repeat fixed;
     height: 75vh;
 
@@ -162,7 +197,7 @@ header {
 .carousel__content button:hover {
     color: #ff6600;
     background-color: white;
-}
+} */
 
 /* ABOUT */
 #about {
@@ -186,16 +221,18 @@ header {
 
 /* BOOKING */
 
-/* .booking__left {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./../images/banner3.jpg) center / cover no-repeat;
-} */
-
 .booking__left {
-    position: relative;
-    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./../images/banner3.jpg) center / cover no-repeat;
+    /* height: 600px; */
+    min-height: 100%;
 }
 
-.booking__left img {
+/* .booking__left {
+    position: relative;
+    height: 600px;
+} */
+
+/* .booking__left img {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     height: 100%;
 }
@@ -208,7 +245,7 @@ header {
     top: 0;
     left: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-}
+} */
 
 .booking__right {
     padding: 5rem 8rem 5rem 4rem;
@@ -253,6 +290,12 @@ header {
 
 .booking__best .col:hover i {
     color: #ffc600;
+}
+
+@media screen and (max-width: 991px) {
+    .booking__left {
+        min-height: 525.58px;
+    }
 }
 
 /* CATERGORIES */
@@ -538,6 +581,15 @@ header {
     border-radius: 20px;
 }
 
+.video .modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.video .modal-content .modal-body iframe {
+    border-radius: 10px;
+}
+
 .video__icon i {
     font-size: 30px;
     width: 80px;
@@ -578,6 +630,17 @@ header {
     padding: 100px 0;
     background-color: #f7f7f7;
 }
+
+.blog__title h6 {
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+}
+
+.blog__title h1 {
+    font-weight: 600;
+}
+
 .blog__title {
     text-align: center;
     margin-bottom: 30px;
@@ -827,6 +890,47 @@ footer .backtotop:hover {
     opacity: 1;
   }
 /* END FOOTER CSS */
+
+/* FIXED NAVBAR */
+#fixed__navbar {
+    position: fixed;
+    top: 3rem;
+    right: 0;
+}
+
+.fixed__navbar__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    background-color: #0d1326;
+    padding: 0 5px;
+}
+
+.fixed__navbar__item a{
+    text-decoration: none;
+    color: gray;
+}
+
+.fixed__navbar__item i{
+    font-size: 1rem;
+    padding: 1rem 2rem 0.5rem 2rem;
+}
+
+.fixed__navbar__item.item1 i {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: solid 1px gray;
+}
+
+.fixed__navbar__item.item4 {
+    margin-bottom: 3rem;
+}
+
+.fixed__navbar__item:hover a {
+    color: white;
+}
 
 /* MEDIA  */
 @media screen and (max-width:1200px) {

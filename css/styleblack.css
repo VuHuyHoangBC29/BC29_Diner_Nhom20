@@ -6,6 +6,7 @@
 }
 body {
     background-color: #232220;
+    max-width: 100%;
 }
 h1, h2, h3, h4, h5 {
     margin: 0;
@@ -443,6 +444,14 @@ header {
     height: 500px;
     border-radius: 20px;
     position: relative;
+}
+.video .modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.video .modal-content .modal-body iframe {
+    border-radius: 10px;
 }
 .video__content::before {
     content: "";
