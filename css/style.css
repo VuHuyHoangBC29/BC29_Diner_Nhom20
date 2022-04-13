@@ -186,7 +186,7 @@ header {
 /* END HEADER CSS */
 
 /* CAROUSEL */
-#carousel {
+/* #carousel {
     background: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(./../images/banner1.jpg) top / cover no-repeat fixed;
     height: 75vh;
 
@@ -222,7 +222,7 @@ header {
 .carousel__content button:hover {
     color: #ff6600;
     background-color: white;
-}
+} */
 
 /* ABOUT */
 #about {
@@ -662,7 +662,7 @@ header {
     left: 50%;
     transform: translate(-50%,-50%);
     transition: all 0.5s ease-in-out;
-    animation: videoicon 1.5s linear infinite;
+    animation: videoicon 1s linear infinite;
     border: transparent;
 }
 .video__icon i:hover {
@@ -677,11 +677,8 @@ header {
     0% {
         box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
     }
-    50% {
-        box-shadow: 0 0 0 5 rgb(255 255 255 / 25%), 0 0 0 15px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
-    }
     100% {
-        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
     }
 }
 /* END VIDEO CSS  */
@@ -874,12 +871,16 @@ footer {
 }
 .contact .form-control {
     padding: 30px 50px 30px 20px;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .submit-btn {
     padding: 20px 0;
     background-color: #ff6600;
     border: none;
     transition: all 0.5s;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .submit-btn:hover {
     opacity: 0.8;
@@ -926,6 +927,10 @@ footer {
 footer a:hover {
     text-decoration: none;
     color: #ff6600;
+}
+footer .backtotop:hover {
+    color: #ff6600;
+    background-color: white;
 }
 .cd-top--is-visible { 
     visibility: visible;

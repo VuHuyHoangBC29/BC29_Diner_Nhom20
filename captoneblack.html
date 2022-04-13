@@ -18,13 +18,11 @@
     />
 
     <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;700&family=Quicksand:wght@300;400;500;600;700&family=Redressed&family=Roboto+Slab&family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+      
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -439,13 +437,27 @@
     <!-- VIDEO  -->
     <section class="video">
       <div class="container">
-        <div class="video__content"></div>
-        <div class="video__icon">
-          <a href="https://player.vimeo.com/video/305185528" target="_blank"
-            ><i class="fas fa-play"></i
-          ></a>
+        <div class="video__content">
         </div>
-      </div>
+  
+        <!-- Button trigger modal -->
+        <div class="video__icon" data-toggle="modal" data-target="#exampleModalCenter">
+          <i class="fas fa-play"></i>
+        </div>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640px" height="360px"
+                  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+  
+        </div>
     </section>
 
     <!-- BLOG  -->
@@ -671,7 +683,7 @@
               </ul>
             </div>
             <div
-              class="col-12 col-md-7 col-lg-6 col-xl-4 mx-2 mx-md-0 contact__item"
+              class="col-12 col-md-7 col-lg-6 col-xl-4 mx-md-0 contact__item"
             >
               <ul>
                 <li>
@@ -685,7 +697,7 @@
                 </li>
                 <li>
                   <form class="row">
-                    <div class="form-group col-11">
+                    <div class="form-group col-12">
                       <input
                         type="email"
                         class="form-control"
@@ -694,7 +706,7 @@
                         placeholder="Enter Your Email"
                       />
                     </div>
-                    <button type="submit" class="btn col-11 submit-btn">
+                    <button type="submit" class="btn col-12 submit-btn">
                       Subscribe
                     </button>
                   </form>

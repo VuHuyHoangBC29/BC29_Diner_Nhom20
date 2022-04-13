@@ -6,6 +6,7 @@
 }
 body {
     background-color: #232220;
+    max-width: 100%;
 }
 h1, h2, h3, h4, h5 {
     margin: 0;
@@ -444,6 +445,14 @@ header {
     border-radius: 20px;
     position: relative;
 }
+.video .modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.video .modal-content .modal-body iframe {
+    border-radius: 10px;
+}
 .video__content::before {
     content: "";
     background: rgb(16 15 19 / 60%);
@@ -470,7 +479,7 @@ header {
     left: 50%;
     transform: translate(-50%,-50%);
     transition: all 0.5s ease-in-out;
-    animation: videoicon 1.5s linear infinite;
+    animation: videoicon 1s linear infinite;
     border: transparent;
 }
 .video__icon i:hover {
@@ -485,11 +494,8 @@ header {
     0% {
         box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
     }
-    50% {
-        box-shadow: 0 0 0 5 rgb(255 255 255 / 25%), 0 0 0 15px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
-    }
     100% {
-        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
     }
 }
 /* END VIDEO CSS  */
@@ -672,12 +678,16 @@ footer {
 }
 .contact .form-control {
     padding: 30px 50px 30px 20px;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .submit-btn {
     padding: 20px 0;
     background-color: #ff6600;
     border: none;
     transition: all 0.5s;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .submit-btn:hover {
     opacity: 0.8;
@@ -722,6 +732,10 @@ footer {
 footer a:hover {
     text-decoration: none;
     color: #ff6600;
+}
+footer .backtotop:hover {
+    color: #ff6600;
+    background-color: white;
 }
 .cd-top--is-visible { 
     visibility: visible;
