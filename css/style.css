@@ -803,11 +803,6 @@ header {
     background-color: #232220;
 }
 
-.video__content iframe {
-    width: 80%;
-    height: 80vh;
-}
-
 .video__content {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../image/banner3.jpg) center / cover no-repeat;
     /* background-position: center;
@@ -831,12 +826,12 @@ header {
     border-radius: 20px;
 } */
 
-.video .modal-content {
+#video .modal-content {
     background-color: transparent;
     border: none;
 }
 
-.video .modal-content .modal-body iframe {
+#video .modal-content .modal-body iframe {
     border-radius: 10px;
 }
 
@@ -860,7 +855,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%); */
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     animation: videoicon 1s linear infinite;
     border: transparent;
 }
