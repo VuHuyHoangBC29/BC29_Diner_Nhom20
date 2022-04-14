@@ -50,7 +50,7 @@ header {
 }
 
 .header__right .search__bar__dark {
-    background-color: black;
+    background-color: #232220;
 }
 
 .header__right .search__bar__light {
@@ -71,25 +71,28 @@ header {
     color: #ff6600; 
 }
 
-.navbar__icon a, .fa-bars {
+
+/* #navbar__icon .fa-bars {
     color: #fff;
     font-size: 20px;
     transition: all 0.5s;
-}
+} */
 
-.navbar__icon .fa-moon {
+#navbar__icon .fa-moon {
     transition: all 0.5s;
     color: white;
     font-size: 1.5rem;
 }
 
-.navbar__icon .fa-sun {
+#navbar__icon .fa-sun {
     transition: all 0.5s;
     color: white;
     font-size: 1.5rem;
 }
 
 .header__right .fa-bars {
+    font-size: 2rem;
+    color: #fff;
     font-size: 2rem;
 }
 
@@ -229,6 +232,22 @@ header {
     padding: 6rem 0;
 }
 
+.about__dark {
+    background-color: #232220;
+}
+
+.about__light {
+    background-color: white;
+}
+
+.about__left__intro__light {
+    color: black;
+}
+
+.about__left__intro__dark {
+    color: white;
+}
+
 .about__left h5 {
     font-family: 'Pacifico', cursive;
     color: #ff6600;
@@ -242,7 +261,22 @@ header {
 
 .about__right p {
     margin-bottom: 1rem;
+}
+
+.about__right__p1__light {
     color: rgba(0, 0, 0, 0.644);
+}
+
+.about__right__p1__dark {
+    color: white;
+}
+
+.about__right__p2__light {
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.about__right__p2__dark {
+    color: white;
 }
 
 /* BOOKING */
