@@ -176,7 +176,7 @@ header {
     color: #ff6600;
 }
 
-@media screen and (max-width:991px) {
+/* @media screen and (max-width:991px) {
     .navbar__content {
         margin-top: 2rem;
         margin-right: 3rem;
@@ -188,7 +188,7 @@ header {
         margin-top: 1rem;
         margin-right: 2rem;
     }
-}
+} */
 
 /* END HEADER CSS */
 
@@ -356,11 +356,11 @@ header {
     color: #ffc600;
 }
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     .booking__left {
         min-height: 525.58px;
     }
-}
+} */
 
 /* CATERGORIES */
 #categories {
@@ -479,7 +479,7 @@ header {
     margin-bottom: 0.6rem;
 }
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     .categories__item {
         height: 400px;
     }
@@ -510,7 +510,7 @@ header {
         padding: 0 0 0 1rem;
         position: relative;
     }
-}
+} */
 
 
 /* MENU */
@@ -789,9 +789,9 @@ header {
 /* END JUMPING CSS */
 
 /* VIDEO CSS */
-#video {
-    padding: 250px 0 100px 0;
-}
+/* #video {
+    padding: 300px 0 100px 0;
+} */
 
 .video__light {
     background-color: #fff;
@@ -800,10 +800,7 @@ header {
 .video__dark {
     background-color: #232220;
 }
-.video__content iframe {
-    width: 80%;
-    height: 80vh;
-}
+
 .video__content {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../image/banner3.jpg) center / cover no-repeat;
     width: 100%;
@@ -815,18 +812,21 @@ header {
 #video .modal-content {
     background-color: transparent;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#video .modal-content .modal-body iframe {
+#video .modal-content iframe {
     border-radius: 10px;
 }
 
-/* .video__icon {
+.video__icon {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-} */
+}
 
 .video__icon i {
     font-size: 30px;
@@ -837,10 +837,6 @@ header {
     border-radius: 50%;
     background-color: white;
     color: #ff6600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     transition: all 0.3s ease-in-out;
     animation: videoicon 1s linear infinite;
     border: transparent;
@@ -864,7 +860,36 @@ header {
         box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
     }
 }
+/* 
+@media screen and (max-width: 1199px) {
+    #video {
+        padding: 300px 0 100px 0;
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    #video {
+        padding: 300px 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #video {
+        padding: 300px 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #video {
+        padding: 700px 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #video {
+        padding: 700px 0 100px 0;
+    }
+} */
 
 
 /* END VIDEO CSS  */
@@ -1352,22 +1377,33 @@ footer .backtotop:hover {
 }
 
 /* MEDIA  */
-@media screen and (max-width:1200px) {
+@media screen and (min-width: 1200px) {
+    #video {
+        padding: 300px 0 100px 0;
+    }
+}
+
+@media screen and (max-width:1199px) {
     .blog__time {
         position: absolute;
         left: 15px;
         top: 130px;
     }
-    .video__content {
-        height: 550px;
-        margin-top: 350px;
+    
+    #video {
+        padding: 300px 0 100px 0;
     }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:991px) {
     .navbar__content h1 {
         font-size: 50px;
         margin-top: 70px;
+    }
+
+    .navbar__content {
+        margin-top: 2rem;
+        margin-right: 3rem;
     }
 
     .form-inline {
@@ -1378,12 +1414,25 @@ footer .backtotop:hover {
         height: 500px;
     }
 
+    .booking__left {
+        min-height: 525.58px;
+    }
+
     .categories__text {
         padding: 8px 28px;
     }
 
     .categories__text a {
         font-size: 20px;
+    }
+
+    .categories__item {
+        height: 400px;
+    }
+
+    .categories__inner {
+        padding: 0 0 1rem 1rem;
+        position: relative;
     }
 
     .jumping__content {
@@ -1397,10 +1446,18 @@ footer .backtotop:hover {
         font-size: 17px;
     }
 
+    #video {
+        padding: 300px 0 100px 0;
+    }
+
     .video__content {
         height: 500px;
-        margin-top: 300px;
     }
+
+    #video iframe {
+
+    }
+    
 
     .testimonials__wrapper {
         width: 70%;
@@ -1414,9 +1471,14 @@ footer .backtotop:hover {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .navbar__content h1 {
         margin-top: 70px;
+    }
+
+    .navbar__content {
+        margin-top: 1rem;
+        margin-right: 2rem;
     }
 
     .form-inline {
@@ -1434,14 +1496,29 @@ footer .backtotop:hover {
     .categories__text a {
         font-size: 17px;
     }
+
+    .categories__item {
+        height: 350px;
+    }
+
+    .categories__inner {
+        padding: 0 0 1rem 1rem;
+        position: relative;
+    }
+
     .testimonials__wrapper {
         width: 80%;
         margin: 50px auto;
     }
-    .video__content {
-        height: 350px;
-        margin-top: 650px;
+
+    #video {
+        padding: 700px 0 100px 0;
     }
+
+    .video__content {
+        height: 400px;
+    }
+
     .blog__time {
         position: absolute;
         left: 15px;
@@ -1449,7 +1526,7 @@ footer .backtotop:hover {
     }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:575px) {
     .navbar__content h1 {
         font-size: 40px;
         margin-top: 70px;
@@ -1466,18 +1543,35 @@ footer .backtotop:hover {
     .categories__text {
         padding: 0px 20px;
     }
-
+    
     .categories__text a {
         font-size: 14px;
     }
+
+    .categories__item {
+        height: 300px;
+    }
+
+    .categories__inner {
+        padding: 0 0 0 1rem;
+        position: relative;
+    }
+
     .testimonials__wrapper {
         width: 90%;
         margin: 50px auto;
     }
 
+    #video {
+        padding: 700px 0 100px 0;
+    }
+
+    #video .modal-content iframe {
+        width: 550px;
+    }
+    
     .video__content {
-        margin-top: 650px;
-        height: 300px;
+        height: 350px;
     }
 
     .blog__time {
