@@ -789,17 +789,9 @@ header {
 /* END JUMPING CSS */
 
 /* VIDEO CSS */
-<<<<<<< HEAD
 /* #video {
     padding: 300px 0 100px 0;
 } */
-=======
-#video {
-    /* background-color: #fff; */
-    margin: 300px 0 100px 0;
-    position: relative;
-}
->>>>>>> main
 
 .video__light {
     background-color: #fff;
@@ -890,7 +882,6 @@ header {
     }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 1200px) {
     #video {
         padding: 300px 0 100px 0;
@@ -916,8 +907,6 @@ header {
 } */
 
 
-=======
->>>>>>> main
 /* END VIDEO CSS  */
 
 /* BLOG CSS */
