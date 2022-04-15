@@ -791,7 +791,7 @@ header {
 /* VIDEO CSS */
 #video {
     /* background-color: #fff; */
-    padding: 250px 0 100px 0;
+    margin: 300px 0 100px 0;
     position: relative;
 }
 
@@ -802,7 +802,10 @@ header {
 .video__dark {
     background-color: #232220;
 }
-
+.video__content iframe {
+    width: 80%;
+    height: 80vh;
+}
 .video__content {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./../image/banner3.jpg) center / cover no-repeat;
     /* background-position: center;
@@ -835,12 +838,12 @@ header {
     border-radius: 10px;
 }
 
-.video__icon {
+/* .video__icon {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
     position: absolute;
-}
+} */
 
 .video__icon i {
     font-size: 30px;
@@ -851,10 +854,10 @@ header {
     border-radius: 50%;
     background-color: white;
     color: #ff6600;
-    /* position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%); */
+    transform: translate(-50%,-50%);
     transition: all 0.3s ease-in-out;
     animation: videoicon 1s linear infinite;
     border: transparent;
@@ -1370,13 +1373,9 @@ footer .backtotop:hover {
         left: 15px;
         top: 130px;
     }
-
-    .jumping__list {
-        margin-top: 90px;
-    }
-
     .video__content {
         height: 550px;
+        margin-top: 350px;
     }
 }
 
@@ -1413,12 +1412,9 @@ footer .backtotop:hover {
         font-size: 17px;
     }
 
-    .jumping__list {
-        margin-top: 70px;
-    }
-
     .video__content {
         height: 500px;
+        margin-top: 300px;
     }
 
     .testimonials__wrapper {
@@ -1453,21 +1449,14 @@ footer .backtotop:hover {
     .categories__text a {
         font-size: 17px;
     }
-
-    .jumping__list {
-        margin-top: 70px;
-    }
-
     .testimonials__wrapper {
         width: 80%;
         margin: 50px auto;
     }
-
     .video__content {
         height: 350px;
-        margin-top: 550px;
+        margin-top: 650px;
     }
-
     .blog__time {
         position: absolute;
         left: 15px;
@@ -1496,18 +1485,13 @@ footer .backtotop:hover {
     .categories__text a {
         font-size: 14px;
     }
-
-    .jumping__list {
-        margin-top: 70px;
-    }
-
     .testimonials__wrapper {
         width: 90%;
         margin: 50px auto;
     }
 
     .video__content {
-        margin-top: 600px;
+        margin-top: 650px;
         height: 300px;
     }
 
