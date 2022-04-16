@@ -638,8 +638,8 @@ document.getElementById("mode__switch").onclick = function () {
         document.getElementById("testimonials").classList.add("testimonials__dark");
     }
     else {
-        document.getElementById("testimonials").classList.add("testimonial__light");
-        document.getElementById("testimonials").classList.remove("testimonial__dark");
+        document.getElementById("testimonials").classList.add("testimonials__light");
+        document.getElementById("testimonials").classList.remove("testimonials__dark");
     }
 
     if (document.getElementById("testimonials__title__header").classList.contains("testimonials__title__header__light")) {
