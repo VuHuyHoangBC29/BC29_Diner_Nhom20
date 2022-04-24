@@ -14,13 +14,9 @@
     rel="stylesheet">
 
   <!-- Fontawesome -->
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- SLICKS-->
   <link rel="stylesheet" href="./slicks/slick.css" />
@@ -34,24 +30,25 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body >
-  <main id="home">
-
-
+<body>
   <header>
     <nav class="navbar container">
       <a class="navbar-brand" href="#">Diner</a>
       <div class="header__right">
         <div class="navbar__search">
           <form class="form-inline my-2 my-lg-0 input-group">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search here ..." aria-label="Search" />
-            <span><button class="btn my-2 my-sm-0" type="submit">
-                <i class="fas fa-search btn__search"></i></button></span>
+            <input id="search__bar" class="form-control mr-sm-2 search__bar__light" type="search"
+              placeholder="Search here ..." aria-label="Search" />
+            <span>
+              <button class="btn my-2 my-sm-0" type="submit">
+                <i class="fas fa-search btn__search"></i>
+              </button>
+            </span>
           </form>
         </div>
-        <div class="navbar__icon">
+        <div id="navbar__icon">
           <!-- <a href=""><i class="far fa-sun"></i></a> -->
-          <a href="#" id="mode__switch"> <i class="far fa-moon"></i></a>
+          <a href="./captoneblack.html"><i id="mode__switch" class="far fa-moon"></i></a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
           aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +56,7 @@
         </button>
       </div>
     </nav>
-    <div class="navbar" id="home">
+    <nav class="navbar" id="home">
       <div class="container">
         <div class="navbar__content">
           <h1>
@@ -69,13 +66,13 @@
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
-            vitae sit.Ea <br />
+            vitae sit.Ea
             ipsum sed consequuntur illum facere.
           </p>
           <button>Read More <i class="fas fa-angle-right"></i></button>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
   <div class="collapse navbar-collapse" id="navbarToggler">
     <div class="navbar__menu">
@@ -90,7 +87,7 @@
           <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#service">Service</a>
+          <a class="nav-link" href="#categories">Service</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#blog">Blog</a>
@@ -99,7 +96,7 @@
           <a class="nav-link" href="#404">404</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#page">Landing Page</a>
+          <a class="nav-link" href="#testimonials">Landing Page</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#code">Shot codes</a>
@@ -111,8 +108,26 @@
     </div>
   </div>
 
+  <!-- Carousel -->
+  <!-- <section id="carousel">
+        <div class="carousel__content container">
+            <h1>
+                The Only Thing We <br> Love More Than Food <br> Is You!
+            </h1>
 
-  <section id="about">
+            <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea <br> ipsum sed consequuntur
+                illum
+                facere.
+            </p>
+
+            <button>
+                Read more <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+    </section> -->
+
+  <section id="about" class="about__light">
     <div class="about__content container">
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-5">
@@ -121,296 +136,14 @@
               About us
             </h5>
 
-                        <h1>
-                            We found our creative space that is open for you.
-                        </h1>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-7">
-                    <div class="about__right">
-                        <p>
-                            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
-                            tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor
-                            sit
-                            amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init
-                            dolor
-                            sit.
-                        </p>
-                        <p>
-                            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
-                            tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor
-                            sit
-                            amet.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BOOKING -->
-    <section id="booking">
-        <div class="booking__content">
-            <div class="row m-0">
-                <div class="col-12 col-sm-12 col-lg-6 px-0">
-                    <div class="booking__left">
-                        <img class="img-fluid" src="/images/banner3.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-12 col-lg-6 px-0">
-                    <div class="booking__right">
-                        <p class="right__title">
-                            More than 3000 Restaurants
-                        </p>
-
-                        <h1>
-                            Book a table easly at the best price
-                        </h1>
-
-                        <p>
-                            Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet
-                            mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
-                        </p>
-
-                        <div class="booking__best">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="best__icon">
-                                        <i class="fas fa-thumbs-up"></i>
-                                    </div>
-                                    <a href="#">Best Deals</a>
-                                    <p>
-                                        Lorem ipsum viverra feugiat. Pellen tesque libero justo.
-                                    </p>
-                                </div>
-
-                                <div class="col">
-                                    <div class="best__icon">
-                                        <i class="fas fa-thumbs-up"></i>
-                                    </div>
-                                    <a href="#">Best Food</a>
-                                    <p>
-                                        Lorem ipsum viverra feugiat. Pellen tesque libero justo.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CATEGORIES -->
-    <section id="categories">
-        <div class="categories__full container">
-            <div class="categories__text text-center">
-                <p>What's New</p>
-                <h1>Popular Categories</h1>
-            </div>
-
-            <div class="categories__list">
-                <div class="row categories__content">
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="categories__item item1">
-                                <div class="categories__bg"></div>
-                                <div class="categories__inner">
-                                    <p class="categories__name">Vegetarian</p>
-                                    <p class="categories__price">$350</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="categories__item item2">
-                                <div class="categories__bg"></div>
-                                <div class="categories__inner">
-                                    <p class="categories__name">Drinks</p>
-                                    <p class="categories__price">$550</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="categories__item item3">
-                                <div class="categories__bg"></div>
-                                <div class="categories__inner">
-                                    <p class="categories__name">Lunch</p>
-                                    <p class="categories__price">$650</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="categories__item item4">
-                                <div class="categories__bg"></div>
-                                <div class="categories__inner">
-                                    <p class="categories__name">Bakery</p>
-                                    <p class="categories__price">$550</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="categories__item item5">
-                                <div class="categories__bg"></div>
-                                <div class="categories__inner">
-                                    <p class="categories__name">Desserts</p>
-                                    <p class="categories__price">$750</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="categories__item item6">
-                                <div class="categories__bg"></div>
-                                <div class="categories__inner">
-                                    <p class="categories__name">Pizza</p>
-                                    <p class="categories__price">$850</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- MENU -->
-    <section id="menu">
-        <div class="menu__full container">
-            <div class="row menu__content">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="menu__item">
-                        <div class="row menu__upper container">
-                            <i class="fas fa-user-friends"></i>
-                            <div class="upper__desc">
-                                <p>01</p>
-                                <a href="#">Soup</a>
-                            </div>
-                        </div>
-
-                        <div class="menu__lower">
-                            <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="menu__item">
-                        <div class="row menu__upper container">
-                            <i class="fas fa-shield-alt"></i>
-                            <div class="upper__desc">
-                                <p>01</p>
-                                <a href="#">Soup</a>
-                            </div>
-                        </div>
-
-                        <div class="menu__lower">
-                            <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="menu__item">
-                        <div class="row menu__upper container">
-                            <i class="fas fa-thermometer-full"></i>
-                            <div class="upper__desc">
-                                <p>01</p>
-                                <a href="#">Soup</a>
-                            </div>
-                        </div>
-
-                        <div class="menu__lower">
-                            <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="menu__item">
-                        <div class="row menu__upper container">
-                            <i class="fas fa-american-sign-language-interpreting"></i>
-                            <div class="upper__desc">
-                                <p>01</p>
-                                <a href="#">Soup</a>
-                            </div>
-                        </div>
-
-                        <div class="menu__lower">
-                            <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="menu__item">
-                        <div class="row menu__upper container">
-                            <i class="fas fa-paint-brush"></i>
-                            <div class="upper__desc">
-                                <p>01</p>
-                                <a href="#">Soup</a>
-                            </div>
-                        </div>
-
-                        <div class="menu__lower">
-                            <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="menu__item">
-                        <div class="row menu__upper container">
-                            <i class="fas fa-eraser"></i>
-                            <div class="upper__desc">
-                                <p>01</p>
-                                <a href="#">Soup</a>
-                            </div>
-                        </div>
-
-                        <div class="menu__lower">
-                            <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- JUMPING  -->
-    <section class="jumping" id="404">
-      <div class="jumping__content">
-        <div class="container">
-          <div class="jumping__title">
-            <h2>
-              Deliciousness jumping into <br />
-              the mouth.
-            </h2>
-            <button class="jumping__read">
-              Read More <i class="fas fa-angle-right"></i>
-            </button>
-            <button class="jumping__contact">
-              Contact Us <i class="fas fa-angle-right"></i>
-            </button>
+            <h1 id="about__left__intro" class="about__left__intro__light">
+              We found our creative space that is open for you.
+            </h1>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-7">
           <div class="about__right">
-            <p>
+            <p id="about__right__p1" class="about__right__p1__light">
               Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
               tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor
               sit
@@ -418,7 +151,7 @@
               dolor
               sit.
             </p>
-            <p>
+            <p id="about__right__p2" class="about__right__p2__light">
               Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
               tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor
               sit
@@ -485,16 +218,16 @@
   </section>
 
   <!-- CATEGORIES -->
-  <section id="categories">
+  <section id="categories" class="categories__light">
     <div class="categories__full container">
       <div class="categories__text text-center">
         <p>What's New</p>
-        <h1>Popular Categories</h1>
+        <h1 id="categories__text__header" class="categories__text__header__light">Popular Categories</h1>
       </div>
 
       <div class="categories__list">
         <div class="row categories__content">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4">
             <a href="#">
               <div class="categories__item item1">
                 <div class="categories__bg"></div>
@@ -506,7 +239,7 @@
             </a>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4">
             <a href="#">
               <div class="categories__item item2">
                 <div class="categories__bg"></div>
@@ -518,7 +251,7 @@
             </a>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4">
             <a href="#">
               <div class="categories__item item3">
                 <div class="categories__bg"></div>
@@ -530,7 +263,7 @@
             </a>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4">
             <a href="#">
               <div class="categories__item item4">
                 <div class="categories__bg"></div>
@@ -542,7 +275,7 @@
             </a>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4">
             <a href="#">
               <div class="categories__item item5">
                 <div class="categories__bg"></div>
@@ -554,7 +287,7 @@
             </a>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4">
             <a href="#">
               <div class="categories__item item6">
                 <div class="categories__bg"></div>
@@ -571,101 +304,108 @@
   </section>
 
   <!-- MENU -->
-  <section id="menu">
+  <section id="menu" class="menu__light">
     <div class="menu__full container">
       <div class="row menu__content">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="menu__item">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div id="menuItem__1" class="menu__item__light">
             <div class="row menu__upper container">
-              <i class="fas fa-user-friends"></i>
+              <i id="menu__upper__icon1" class="fas fa-user-friends menu__upper__icon__light"></i>
               <div class="upper__desc">
-                <p>01</p>
-                <a href="#">Soup</a>
+                <p id="upper__desc__number1" class="upper__desc__number__light">01</p>
+                <a href="#" id="upper__desc__item1" class="upper__desc__item__light">Soup</a>
               </div>
             </div>
 
             <div class="menu__lower">
-              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
+              <p id="menu__lower__text1" class="menu__lower__text__light">Lorem ipsum dolor sit amet consectetur ipsum
+                elit. Qui eligendi vitae sit..</p>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="menu__item">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div id="menuItem__2" class="menu__item__light">
             <div class="row menu__upper container">
-              <i class="fas fa-shield-alt"></i>
+              <i id="menu__upper__icon2" class="fas fa-shield-alt menu__upper__icon__light"></i>
               <div class="upper__desc">
-                <p>01</p>
-                <a href="#">Soup</a>
+                <p id="upper__desc__number2" class="upper__desc__number__light">02</p>
+                <a href="#" id="upper__desc__item2" class="upper__desc__item__light">Drinks</a>
               </div>
             </div>
 
             <div class="menu__lower">
-              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
+              <p id="menu__lower__text2" class="menu__lower__text__light">Lorem ipsum dolor sit amet consectetur ipsum
+                elit. Qui eligendi vitae sit..</p>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="menu__item">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div id="menuItem__3" class="menu__item__light">
             <div class="row menu__upper container">
-              <i class="fas fa-thermometer-full"></i>
+              <i id="menu__upper__icon3" class="fas fa-thermometer-full menu__upper__icon__light"></i>
               <div class="upper__desc">
-                <p>01</p>
-                <a href="#">Soup</a>
+                <p id="upper__desc__number3" class="upper__desc__number__light">03</p>
+                <a href="#" id="upper__desc__item3" class="upper__desc__item__light">Pizza</a>
               </div>
             </div>
 
             <div class="menu__lower">
-              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
+              <p id="menu__lower__text3" class="menu__lower__text__light">Lorem ipsum dolor sit amet consectetur ipsum
+                elit. Qui eligendi vitae sit..</p>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="menu__item">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div id="menuItem__4" class="menu__item__light">
             <div class="row menu__upper container">
-              <i class="fas fa-american-sign-language-interpreting"></i>
+              <i id="menu__upper__icon4"
+                class="fas fa-american-sign-language-interpreting menu__upper__icon__light"></i>
               <div class="upper__desc">
-                <p>01</p>
-                <a href="#">Soup</a>
+                <p id="upper__desc__number4" class="upper__desc__number__light">04</p>
+                <a href="#" id="upper__desc__item4" class="upper__desc__item__light">Breakfast</a>
               </div>
             </div>
 
             <div class="menu__lower">
-              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
+              <p id="menu__lower__text4" class="menu__lower__text__light">Lorem ipsum dolor sit amet consectetur ipsum
+                elit. Qui eligendi vitae sit..</p>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="menu__item">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div id="menuItem__5" class="menu__item__light">
             <div class="row menu__upper container">
-              <i class="fas fa-paint-brush"></i>
+              <i id="menu__upper__icon5" class="fas fa-paint-brush menu__upper__icon__light"></i>
               <div class="upper__desc">
-                <p>01</p>
-                <a href="#">Soup</a>
+                <p id="upper__desc__number5" class="upper__desc__number__light">05</p>
+                <a href="#" id="upper__desc__item5" class="upper__desc__item__light">Lunch</a>
               </div>
             </div>
 
             <div class="menu__lower">
-              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
+              <p id="menu__lower__text5" class="menu__lower__text__light">Lorem ipsum dolor sit amet consectetur ipsum
+                elit. Qui eligendi vitae sit..</p>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-          <div class="menu__item">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div id="menuItem__6" class="menu__item__light">
             <div class="row menu__upper container">
-              <i class="fas fa-eraser"></i>
+              <i id="menu__upper__icon6" class="fas fa-eraser menu__upper__icon__light"></i>
               <div class="upper__desc">
-                <p>01</p>
-                <a href="#">Soup</a>
+                <p id="upper__desc__number6" class="upper__desc__number__light">06</p>
+                <a href="#" id="upper__desc__item6" class="upper__desc__item__light">Dinner</a>
               </div>
             </div>
 
             <div class="menu__lower">
-              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit..</p>
+              <p id="menu__lower__text6" class="menu__lower__text__light">Lorem ipsum dolor sit amet consectetur ipsum
+                elit. Qui eligendi vitae sit..</p>
             </div>
           </div>
         </div>
@@ -724,14 +464,13 @@
   </section>
 
   <!-- VIDEO  -->
-  <section class="video">
+  <section id="video" class="video__light">
     <div class="container">
       <div class="video__content">
-      </div>
-
-      <!-- Button trigger modal -->
-      <div class="video__icon" data-toggle="modal" data-target="#exampleModalCenter">
-        <i class="fas fa-play"></i>
+        <!-- Button trigger modal -->
+        <div class="video__icon" data-toggle="modal" data-target="#exampleModalCenter">
+          <i class="fas fa-play"></i>
+        </div>
       </div>
 
       <!-- Modal -->
@@ -739,36 +478,41 @@
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content">
-            <div class="modal-body text-center">
-              <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640px" height="360px"
+            <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640px" height="360px"
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            </div>
           </div>
         </div>
-
       </div>
+    </div>
   </section>
 
   <!-- BLOG  -->
-  <section class="blog" id="blog">
+  <section id="blog" class="blog__light">
     <div class="container">
       <div class="blog__title">
         <h6>Latest Posts</h6>
-        <h1>Blog Posts</h1>
+        <h1 id="blog__title__header" class="blog__title__header__light">Blog Posts</h1>
       </div>
+
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
             <img src="./image/banner1.jpg" class="card-img-top" alt="...">
             <div class="card-body blog__text">
-              <h5 class="card-title"><a href="">The Best Cookie Recipes To Bake This Weekend</a></h5>
-              <p class="card-text">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit..</p>
+              <h5 class="card-title">
+                <a href="" id="blog__text__header1" class="blog__text__header__light">
+                  The Best Cookie Recipes To Bake This Weekend
+                </a>
+              </h5>
+              <p id="blog__text__desc1" class="card-text blog__text__desc__light">
+                Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit..
+              </p>
               <div class="blog__icon d-flex">
                 <div class="blog__user d-flex">
                   <img src="./image/team1.jpg" alt="">
-                  <a href="#">Rashed Kabir</a>
+                  <a href="#" id="blog__commentor1" class="blog__commentor__light">Rashed Kabir</a>
                 </div>
-                <a href="">Read More <i class="fas fa-angle-right"></i></a>
+                <a href="" id="blog__read1" class="blog__read__light">Read More <i class="fas fa-angle-right"></i></a>
               </div>
               <div class="blog__time">
                 <a href="">Reciepe</a>
@@ -777,18 +521,25 @@
             </div>
           </div>
         </div>
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
             <img src="./image/banner3.jpg" class="card-img-top" alt="...">
             <div class="card-body blog__text">
-              <h5 class="card-title"><a href="">The Best Cookie Recipes To Bake This Weekend</a></h5>
-              <p class="card-text">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit..</p>
+              <h5 class="card-title">
+                <a href="" id="blog__text__header2" class="blog__text__header__light">
+                  The Best Cookie Recipes To Bake This Weekend
+                </a>
+              </h5>
+              <p id="blog__text__desc2" class="card-text blog__text__desc__light">
+                Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit..
+              </p>
               <div class="blog__icon d-flex">
                 <div class="blog__user d-flex">
                   <img src="./image/team2.jpg" alt="">
-                  <a href="#">Jannatul Ferdous</a>
+                  <a href="#" id="blog__commentor2" class="blog__commentor__light">Jannatul Ferdous</a>
                 </div>
-                <a href="">Read More <i class="fas fa-angle-right"></i></a>
+                <a href="" id="blog__read2" class="blog__read__light">Read More <i class="fas fa-angle-right"></i></a>
               </div>
               <div class="blog__time">
                 <a href="">Soup</a>
@@ -797,18 +548,25 @@
             </div>
           </div>
         </div>
+
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
             <img src="./image/banner1.jpg" class="card-img-top" alt="...">
             <div class="card-body blog__text">
-              <h5 class="card-title"><a href="">The Best Cookie Recipes To Bake This Weekend</a></h5>
-              <p class="card-text">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit..</p>
+              <h5 class="card-title">
+                <a href="" id="blog__text__header3" class="blog__text__header__light">
+                  The Best Cookie Recipes To Bake This Weekend
+                </a>
+              </h5>
+              <p id="blog__text__desc3" class="card-text blog__text__desc__light">
+                Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit..
+              </p>
               <div class="blog__icon d-flex">
                 <div class="blog__user d-flex">
                   <img src="./image/team3.jpg" alt="">
-                  <a href="#">Rashed Kabir</a>
+                  <a href="#" id="blog__commentor3" class="blog__commentor__light">Rashed Kabir</a>
                 </div>
-                <a href="">Read More <i class="fas fa-angle-right"></i></a>
+                <a href="" id="blog__read3" class="blog__read__light">Read More <i class="fas fa-angle-right"></i></a>
               </div>
               <div class="blog__time">
                 <a href="">Drink</a>
@@ -822,11 +580,13 @@
   </section>
 
   <!-- TESTIMONIALS  -->
-  <section class="testimonials" id="#pages">
+  <section id="testimonials" class="testimonials__light">
     <div class="container">
       <div class="testimonials__title">
         <h6>Testimonials</h6>
-        <h1>What People Say</h1>
+        <h1 id="testimonials__title__header" class="testimonials__title__header__light">
+          What People Say
+        </h1>
       </div>
       <div class="testimonials__wrapper">
         <div class="testimonials__slide">
@@ -835,40 +595,52 @@
           </div>
           <div class="testimonials__text">
             <p>"</p>
-            <span><i> OMG! I cannot believe. It's Awesome"</i></span>
-            <p>"My new site is so much faster and easier to work with than my old site. They are here to help the
-              customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo,
+            <span id="testimonials__text__header1" class="testimonials__text__header__light">
+              OMG! I cannot believe. It's Awesome"
+            </span>
+            <p id="testimonials__text__comment1" class="testimonials__text__comment__light">
+              "My new site is so much faster and easier to work with than my old site. They are here to help the
+              customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
+              justo,
               ultrices in ligula."</p>
-            <span>Johnson william</span>
-            <p>Customer</p>
+            <h5 id="testimonials__text__user1" class="testimonials__text__user__light">Johnson william</h5>
+            <p id="testimonials__text__role1" class="testimonials__text__role__light">Customer</p>
           </div>
         </div>
+
         <div class="testimonials__slide">
           <div class="testimonials__thumbs">
             <img src="./image/team2.jpg" alt="">
           </div>
           <div class="testimonials__text">
             <p>"</p>
-            <span><i> OMG! I cannot believe. It's Awesome"</i></span>
-            <p>"My new site is so much faster and easier to work with than my old site. They are here to help the
-              customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo,
+            <span id="testimonials__text__header2" class="testimonials__text__header__light">OMG! I cannot believe. It's
+              Awesome"</span>
+            <p id="testimonials__text__comment2" class="testimonials__text__comment__light">
+              "My new site is so much faster and easier to work with than my old site. They are here to help the
+              customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
+              justo,
               ultrices in ligula."</p>
-            <span>Johnson william</span>
-            <p>Customer</p>
+            <h5 id="testimonials__text__user2" class="testimonials__text__user__light">Johnson william</h5>
+            <p id="testimonials__text__role2" class="testimonials__text__role__light">Customer</p>
           </div>
         </div>
+
         <div class="testimonials__slide">
           <div class="testimonials__thumbs">
             <img src="./image/team3.jpg" alt="">
           </div>
           <div class="testimonials__text">
             <p>"</p>
-            <span><i> OMG! I cannot believe. It's Awesome"</i></span>
-            <p>"My new site is so much faster and easier to work with than my old site. They are here to help the
-              customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo,
+            <span id="testimonials__text__header3" class="testimonials__text__header__light">OMG! I cannot believe. It's
+              Awesome"</span>
+            <p id="testimonials__text__comment3" class="testimonials__text__comment__light">
+              "My new site is so much faster and easier to work with than my old site. They are here to help the
+              customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
+              justo,
               ultrices in ligula."</p>
-            <span>Johnson william</span>
-            <p>Customer</p>
+            <h5 id="testimonials__text__user3" class="testimonials__text__user__light">Johnson william</h5>
+            <p id="testimonials__text__role3" class="testimonials__text__role__light">Customer</p>
           </div>
         </div>
       </div>
@@ -877,7 +649,7 @@
 
   <footer>
     <div class="container">
-      <div class="contact">
+      <div class="contact" id="email">
         <div class="row">
           <div class="col-12 col-md-7 col-lg-6  col-xl-4 contact__item">
             <ul>
@@ -888,16 +660,17 @@
               </li>
               <li>
                 <p>
-                  Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+                  Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                  tempufddfel.
                   Lorem ipsum dolor sit amet Semper at elit.
                 </p>
               </li>
               <li>
                 <div class="contact__icon">
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-instagram"></i>
-                  <i class="fab fa-linkedin-in"></i>
+                  <i id="contact__icon__item1" class="fab fa-facebook-f contact__icon__item__light"></i>
+                  <i id="contact__icon__item2" class="fab fa-twitter contact__icon__item__light"></i>
+                  <i id="contact__icon__item3" class="fab fa-instagram contact__icon__item__light"></i>
+                  <i id="contact__icon__item4" class="fab fa-linkedin-in contact__icon__item__light"></i>
                 </div>
               </li>
             </ul>
@@ -959,10 +732,10 @@
               <li>
                 <form class="row">
                   <div class="form-group col-12 ">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="Enter Your Email">
+                    <input id="email__input" type="email" class="form-control email__input__light"
+                      id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
                   </div>
-                  <button type="submit" class="btn col-12 submit-btn ">Subscribe</button>
+                  <button type="submit" class="btn col-12 submit-btn ">Subscribe Now</button>
                 </form>
               </li>
             </ul>
@@ -981,154 +754,19 @@
     </div>
   </footer>
 
-    <!-- TESTIMONIALS  -->
-    <section class="testimonials" id="#pages">
-      <div class="container">
-        <div class="testimonials__title">
-          <h5>Testimonials</h5>
-          <h1>What People Say</h1>
-        </div>
-          <div class="testimonials__wrapper">
-            <div class="testimonials__slide">
-              <div class="testimonials__thumbs">
-                <img src="./image/team1.jpg" alt="">
-              </div>  
-              <div class="testimonials__text">
-                <p>"</p>
-                <span><i> OMG! I cannot believe. It's Awesome"</i></span>
-                <p>"My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula."</p>
-                <span>Johnson william</span>
-                <p>Customer</p>
-              </div>   
-            </div>
-            <div class="testimonials__slide">
-              <div class="testimonials__thumbs">
-                <img src="./image/team2.jpg" alt="">
-              </div>  
-              <div class="testimonials__text">
-                <p>"</p>
-                <span><i> OMG! I cannot believe. It's Awesome"</i></span>
-                <p>"My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula."</p>
-                <span>Johnson william</span>
-                <p>Customer</p>
-              </div>   
-            </div>
-            <div class="testimonials__slide">
-              <div class="testimonials__thumbs">
-                <img src="./image/team3.jpg" alt="">
-              </div>  
-              <div class="testimonials__text">
-                <p>"</p>
-                <span><i> OMG! I cannot believe. It's Awesome"</i></span>
-                <p>"My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula."</p>
-                <span>Johnson william</span>
-                <p>Customer</p>
-              </div>   
-            </div>
-        </div>
+  <!-- <div id="fixed__navbar">
+    <div class="fixed__navbar__list">
+      <div class="fixed__navbar__item item1">
+        <a href="#">
+          <i class="fas fa-angle-double-right"></i>
+        </a>
       </div>
 
-    <footer>
-      <div class="container">
-        <div class="contact">
-          <div class="row">
-            <div class="col-12 col-md-7 col-lg-6  col-xl-4 contact__item">
-              <ul>
-                <li>
-                  <h4>
-                    <a href="">Diner</a>
-                  </h4>
-                </li>
-                <li>
-                  <p>
-                    Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.
-                  </p>
-                </li>
-                <li>
-                  <div class="contact__icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin-in"></i>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-5 col-lg-6 col-xl-2 contact__item">
-              <ul>
-                <li>
-                  <h4>Usefull Links</h4>
-                </li>
-                <li>
-                  <a href="">About Us</a>
-                </li>
-                <li>
-                  <a href="">Service</a>
-                </li>
-                <li>
-                  <a href="">Blog posts</a>
-                </li>
-                <li>
-                  <a href="">Careers</a>
-                </li>
-                <li>
-                  <a href="">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-5 col-lg-6 col-xl-2 contact__item">
-              <ul>
-                <li>
-                  <h4>More Info</h4>
-                </li>
-                <li>
-                  <a href="">Histoty</a>
-                </li>
-                <li>
-                  <a href="">Vision & Values</a>
-                </li>
-                <li>
-                  <a href="">Award</a>
-                </li>
-                <li>
-                  <a href="">Media</a>
-                </li>
-                <li>
-                  <a href="">Support</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-7 col-lg-6 col-xl-4  contact__item">
-              <ul>
-                <li>
-                  <h4>Subscribe to our Newsletter</h4>
-                </li>
-                <li>
-                  <p>
-                    Enter your email and receive the latest news, updates and special offers from us.
-                  </p>
-                </li>
-                <li>
-                  <form class="row">
-                    <div class="form-group col-12 ">
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
-                    </div>
-                    <button type="submit" class="btn col-12 submit-btn ">Subscribe</button>
-                  </form>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row contact__copies pt-5">
-            <p class="col-12 col-md-6">© 2021 Diner. All rights reserved. Design by <a href="">W3Layouts</a></p>
-            <div class="col-12 col-md-6 contact__copies-item text-right">
-              <a href="">Careers</a>
-              <a href="">Privacy Policy</a>
-              <a href="">Contact Us</a>
-            </div>
-          </div>
-        </div>
-        <a href="" class="backtotop cd-top text-replace js-cd-top">⤴</a>
+      <div class="fixed__navbar__item item2">
+        <a href="#" class="d-flex flex-column text-center">
+          <i class="fas fa-arrow-left"></i>
+          <p>Back</p>
+        </a>
       </div>
 
       <div class="fixed__navbar__item item3">
@@ -1147,7 +785,6 @@
     </div>
   </div> -->
 
-</main>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -66,6 +66,7 @@ header {
 
 .fa-moon {
     transition: all 0.5s;
+    color: #fff;
 }
 
 .collapse .navbar__menu {
@@ -445,7 +446,7 @@ header {
     color: rgba(0, 0, 0, 0.644);
 }
 
-.menu__item:hover .menu__upper i {
+.menu__upper:hover i {
     color: white;
     background-color: #ff6600;
 }
@@ -550,9 +551,9 @@ header {
 /* END JUMPING CSS */
 
 /* VIDEO CSS */
-.video {
+#video {
     background-color: #fff;
-    margin: 250px 0 100px 0;
+    padding: 250px 0 100px 0;
     position: relative;
 }
 .video__content iframe {
@@ -706,7 +707,7 @@ header {
 /* END BLOG CSS  */
 
 /* TESTIMONIALS CSS */
-.testimonials {
+#testimonials {
     padding: 100px 0;
 }
 .testimonials__title {
