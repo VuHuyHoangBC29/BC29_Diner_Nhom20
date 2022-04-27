@@ -996,8 +996,8 @@ header {
     align-items: center;
 }
 
-.blog__icon>a:hover {
-    color: #ff6600;
+.blog__icon a:hover {
+    color: #ff6600 !important;
 }
 
 .blog .card {
