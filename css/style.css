@@ -49,11 +49,11 @@ header {
     padding: 20px 50px 20px 20px;
 }
 
-.header__right .search__bar__dark {
+.header__right #search__bar.dark {
     background-color: #232220;
 }
 
-.header__right .search__bar__light {
+.header__right #search__bar {
     background-color: white;
 }
 
@@ -234,21 +234,20 @@ header {
 /* ABOUT */
 #about {
     padding: 6rem 0;
-}
-
-.about__dark {
-    background-color: #232220;
-}
-
-.about__light {
     background-color: white;
 }
 
-.about__left__intro__light {
+#about.dark {
+    background-color: #232220;
+}
+
+.about__left h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
     color: black;
 }
 
-.about__left__intro__dark {
+#about.dark .about__left h1 {
     color: white;
 }
 
@@ -258,28 +257,12 @@ header {
     font-size: 1.3rem;
 }
 
-.about__left h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
-}
-
 .about__right p {
     margin-bottom: 1rem;
-}
-
-.about__right__p1__light {
     color: rgba(0, 0, 0, 0.644);
 }
 
-.about__right__p1__dark {
-    color: white;
-}
-
-.about__right__p2__light {
-    color: rgba(0, 0, 0, 0.644);
-}
-
-.about__right__p2__dark {
+#about.dark .about__right p {
     color: white;
 }
 
@@ -365,21 +348,14 @@ header {
 /* CATERGORIES */
 #categories {
     padding: 6rem 0 5rem 0;
-}
-
-.categories__light {
     background-color: #f7f7f7;
 }
 
-.categories__dark {
+#categories.dark {
     background-color: #282828;
 }
 
-.categories__text__header__light {
-    color: black;
-}
-
-.categories__text__header__dark {
+#categories.dark .categories__text h1 {
     color: white;
 }
 
@@ -391,6 +367,7 @@ header {
 
 .categories__text h1 {
     font-weight: 600;
+    color: black;
 }
 
 .categories__content a {
@@ -516,32 +493,21 @@ header {
 /* MENU */
 #menu {
     padding: 5rem 0;
+    background-color: #fdfdfd
 }
 
-.menu__light {
-    background-color: #fdfdfd;
-}
-
-.menu__dark {
+#menu.dark {
     background-color: #232220;
 }
 
-#menuItem__1,
-#menuItem__2,
-#menuItem__3,
-#menuItem__4,
-#menuItem__5,
-#menuItem__6 {
+.menuItem {
     padding: 2rem;
     border-radius: 5px;
     margin-bottom: 1.5rem;
-}
-
-.menu__item__light {
     border: solid 1px rgba(0, 0, 0, 0.103);
 }
 
-.menu__item__dark {
+#menu.dark .menuItem {
     border: solid 1px rgba(255, 255, 255, 0.137);
 }
 
@@ -559,64 +525,44 @@ header {
     color: #ff6600;
     margin-right: 1.5rem;
     transition: all 0.5s;
-}
-
-.menu__upper__icon__light {
     background-color: #f9f8ff;
 }
 
-.menu__upper__icon__dark {
+#menu.dark .menu__upper i {
     background-color: #282828;
 }
 
 .upper__desc p {
     margin-bottom: 0.4rem;
-}
-
-.upper__desc__number__light {
     color: black;
 }
 
-.upper__desc__number__dark {
+#menu.dark .upper__desc p {
     color: white;
 }
 
 .upper__desc a {
     text-decoration: none;
-    /* color: black; */
+    color: black;
     font-size: 1.3rem;
     font-weight: 600;
 }
 
-.upper__desc__item__light {
-    color: black;
-}
-
-.upper__desc__item__dark {
+#menu.dark .upper__desc a {
     color: white;
 }
 
-/* .menu__lower p {
-    color: rgba(0, 0, 0, 0.644);
-} */
-
-.menu__lower__text__light {
+.menu__lower p {
     color: rgba(0, 0, 0, 0.644);
 }
 
-.menu__lower__text__dark {
+#menu.dark .menu__lower p {
     color: white;
 }
 
-
-#menuItem__1:hover .menu__upper i,
-#menuItem__2:hover .menu__upper i,
-#menuItem__3:hover .menu__upper i,
-#menuItem__4:hover .menu__upper i,
-#menuItem__5:hover .menu__upper i,
-#menuItem__6:hover .menu__upper i {
+.menuItem:hover .menu__upper i {
     color: white;
-    background-color: #ff6600;
+    background-color: #ff6600 !important;
 }
 
 .upper__desc a:hover {
@@ -624,6 +570,14 @@ header {
 }
 
 /* JUMPING CSS */
+#jumping {
+
+}
+
+#jumping.dark {
+
+}
+
 .jumping__content {
     background-image: url(./../image/banner2.jpg);
     background-position: center;
@@ -685,10 +639,7 @@ header {
     opacity: 0.8;
 }
 
-#jumping__item1,
-#jumping__item2,
-#jumping__item3,
-#jumping__item4 {
+.jumping__list .card .card-body {
     text-align: center;
     box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
     /* background-color: white; */
@@ -697,6 +648,21 @@ header {
     border-radius: 10px;
     transform: translateY(0px);
     transition: all 0.5s;
+    background-color: white;
+}
+
+#jumping.dark .jumping__list .card .card-body {
+    background-color: #232220;
+}
+
+.jumping__list .card .card-body:hover {
+    transform: translateY(-20px);
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+
+#jumping.dark .jumping__list .card .card-body:hover {
+    transform: translateY(-20px);
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
 }
 
 #jumping__item1.jumping__item__light:hover,
@@ -721,24 +687,21 @@ header {
     box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
 } */
 
-.jumping__item__light {
+/* .jumping__item__light {
     background-color: white;
 }
 
 .jumping__item__dark {
     background-color: #232220;
-}
+} */
 
-.jumping .card {
+#jumping .card {
     background-color: transparent;
     border: none;
     padding: 0;
 }
 
-#jumping__item1 i,
-#jumping__item2 i,
-#jumping__item3 i,
-#jumping__item4 i {
+.jumping__list .card .card-body i {
     background: #ff6600;
     font-size: 26px;
     border-radius: 50%;
