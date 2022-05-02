@@ -885,21 +885,19 @@ header {
     color: rgba(255, 255, 255, 0.6);
 } */
 
-
-
-.blog__commentor__light {
+#blog .card .card-body .blog__icon .blog__user a {
     color: black !important;
 }
 
-.blog__commentor__dark {
+#blog.dark .card .card-body .blog__icon .blog__user a {
     color: white !important;
 }
 
-.blog__read__light {
+#blog .card .card-body .blog__icon a {
     color: black !important;
 }
 
-.blog__read__dark {
+#blog.dark .card .card-body .blog__icon a {
     color: white !important;
 }
 
@@ -961,13 +959,10 @@ header {
 /* TESTIMONIALS CSS */
 #testimonials {
     padding: 100px 0;
-}
-
-.testimonials__light {
     background-color: white;
 }
 
-.testimonials__dark {
+#testimonials.dark {
     background-color: #232220;
 }
 

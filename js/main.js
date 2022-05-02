@@ -815,4 +815,5 @@ document.getElementById("navbar__icon").onclick = function () {
     document.getElementById('jumping').classList.toggle('dark');
     document.getElementById('video').classList.toggle('dark');
     document.getElementById('blog').classList.toggle('dark');
+    document.getElementById('testimonials').classList.toggle('dark');
 }
